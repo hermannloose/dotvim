@@ -1,31 +1,52 @@
+filetype off
+
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
+
+filetype plugin indent on
+
+set nocompatible
 
 colorscheme slate
 
 set guifont=Monospace\ 9
 
-"files
-set autochdir
+set showmode
+set showcmd
 
-"folding
-set foldmethod=syntax
-
-"indentation
+" Indentation
 set autoindent
 set tabstop=2
 set shiftwidth=2
 
-"line numbers
+" Line numbers
 set number
 
-"searching
+" Searching
+nnoremap / /\v
+vnoremap / /\v
+set ignorecase
+set smartcase
 set hlsearch
 set incsearch
 
-"cursor
+" Cursor
+set scrolloff=5
 set cursorline
 
-"highlighting
-highlight Comment guifg=Orange
-highlight CursorLine guibg=Black
+" Key mappings
+nnoremap <up> <nop>
+nnoremap <down> <nop>
+nnoremap <left> <nop>
+nnoremap <right> <nop>
+inoremap <up> <nop>
+inoremap <down> <nop>
+inoremap <left> <nop>
+inoremap <right> <nop>
+nnoremap j gj
+nnoremap k gk
+" disable help key
+inoremap <F1> <ESC>
+nnoremap <F1> <ESC>
+vnoremap <F1> <ESC>
+inoremap jj <ESC>
