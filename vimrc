@@ -32,7 +32,6 @@ set incsearch
 
 " Cursor
 set scrolloff=5
-set cursorline
 
 " Key mappings
 nnoremap <up> <nop>
