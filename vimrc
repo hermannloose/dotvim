@@ -9,18 +9,33 @@ set nocompatible
 
 colorscheme slate
 
-set guifont=Monospace\ 9
-
 set showmode
 set showcmd
+set laststatus=2
+set hidden
+set ruler
 
 " Indentation
 set autoindent
 set tabstop=2
 set shiftwidth=2
 
-" Line numbers
-set number
+" Relativ line numbers
+set relativenumber
+
+" Invisible characters
+set list
+set listchars=tab:›\ ,eol:¬,trail:.
+" Be a Nazi about trailing whitespace
+match Error /\s\+$\| \+\ze\t/
+
+" Wrapping
+set wrap
+set textwidth=79
+set formatoptions=qrn1
+set colorcolumn=85
+
+set backspace=indent,eol,start
 
 let mapleader=","
 
@@ -37,7 +52,9 @@ nnoremap <tab> %
 vnoremap <tab> %
 
 " Cursor
+set cursorline
 set scrolloff=5
+set visualbell
 
 " Key mappings
 nnoremap <up> <nop>
@@ -55,3 +72,10 @@ inoremap <F1> <ESC>
 nnoremap <F1> <ESC>
 vnoremap <F1> <ESC>
 inoremap jj <ESC>
+
+" Options related to plugins
+
+" session
+set sessionoptions-=help
+let g:session_autoload = 1
+let g:session_autosave = 1
