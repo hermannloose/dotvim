@@ -22,13 +22,19 @@ set shiftwidth=2
 " Line numbers
 set number
 
+let mapleader=","
+
 " Searching
 nnoremap / /\v
 vnoremap / /\v
 set ignorecase
 set smartcase
+set gdefault
 set hlsearch
 set incsearch
+nnoremap <leader><space> :noh<cr>
+nnoremap <tab> %
+vnoremap <tab> %
 
 " Cursor
 set scrolloff=5
