@@ -20,8 +20,12 @@ set autoindent
 set tabstop=2
 set shiftwidth=2
 
-" Relativ line numbers
-set relativenumber
+" Relative line numbers
+if has('relativenumber')
+	set relativenumber
+else
+	set number
+endif
 
 " Invisible characters
 set list
@@ -33,7 +37,9 @@ match Error /\s\+$\| \+\ze\t/
 set wrap
 set textwidth=79
 set formatoptions=qrn1
-set colorcolumn=85
+if has('colorcolumn')
+	set colorcolumn=85
+endif
 
 set backspace=indent,eol,start
 
