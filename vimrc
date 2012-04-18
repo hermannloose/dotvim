@@ -81,6 +81,14 @@ inoremap <F1> <ESC>
 nnoremap <F1> <ESC>
 vnoremap <F1> <ESC>
 inoremap jj <ESC>
+" Easy window switching
+noremap <C-h> <C-w>h
+noremap <C-j> <C-w>j
+noremap <C-k> <C-w>k
+noremap <C-l> <C-w>l
+" Formatting
+nnoremap <leader>q gqip
+vnoremap <leader>q gq
 
 " Options related to plugins
 
