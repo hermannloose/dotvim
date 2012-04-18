@@ -8,3 +8,7 @@ various formidable [Vimcasts](http://vimcasts.org).
 
 Most of the plugins I heavily use were created by the amazing [Tim
 Pope](https://github.com/tpope).
+
+Like so many people before, I've fallen in love with the omnipresent
+[Mustang](http://hcalves.deviantart.com/art/Mustang-Vim-Colorscheme-98974484)
+colorscheme by Henrique Alves.
