@@ -7,7 +7,9 @@ filetype plugin indent on
 
 set nocompatible
 
-colorscheme slate
+if &t_Co >= 256 || has('gui_running')
+  colorscheme Mustang
+endif
 
 set showmode
 set showcmd
