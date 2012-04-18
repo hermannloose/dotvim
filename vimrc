@@ -6,6 +6,7 @@ call pathogen#helptags()
 filetype plugin indent on
 
 set nocompatible
+set nobackup
 
 if &t_Co >= 256 || has('gui_running')
   colorscheme Mustang
