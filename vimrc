@@ -45,6 +45,10 @@ if has('colorcolumn')
 	set colorcolumn=85
 endif
 
+" Highlight lines over 100 characters.
+highlight OverLength ctermbg=88 guibg=#870000
+match OverLength /\%101v.\+/
+
 set backspace=indent,eol,start
 
 let mapleader=","
