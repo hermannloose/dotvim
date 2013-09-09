@@ -40,3 +40,9 @@
 [submodule "bundle/weasel"]
 	path = bundle/weasel
 	url = https://github.com/bjoernd/vim-weasel
+[submodule "bundle/easytags"]
+	path = bundle/easytags
+	url = https://github.com/xolox/vim-easytags.git
+[submodule "bundle/misc"]
+	path = bundle/misc
+	url = https://github.com/xolox/vim-misc.git
